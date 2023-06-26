@@ -1,4 +1,5 @@
 # ahannah Package version: 8.0.0/OCP27.91-38-31-54/65:user/release-keys
+# aljeter Package version: 9/PPP29.55-35-12/664d3:user/release-keys
 # hannah Package version: 8.0.0/OCPS27.91-150-11-2/3:user/release-keys
 
 # Firmware - from ahannah
@@ -16,6 +17,9 @@ vendor/firmware/novatek_ts-tianma-NT36525-180312-25-hannah.bin
 
 # WLAN - from ahannah
 vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/ahannah_WCNSS_qcom_wlan_nv.bin|fb1275047485a605d6d9e4121ee54344ae93dd9d
+
+# WLAN - from aljeter (FIXME: aljeter has multiple WCNSS_qcom_wlan_nv.bin)
+vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/aljeter_WCNSS_qcom_wlan_nv.bin|b4ec643739a7ead64459c6e0e78f5da0bdc30758
 
 # WLAN - from hannah
 vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/hannah_WCNSS_qcom_wlan_nv.bin|b87fd6759ae47478cba81dd706ad4be0b7027417

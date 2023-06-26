@@ -11,7 +11,7 @@ DEVICE_PATH := device/motorola/moto8937_o
 USES_DEVICE_MOTOROLA_MOTO8937_O := true
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := moto8937_o,ahannah,hannah
+TARGET_OTA_ASSERT_DEVICE := moto8937_o,ahannah,aljeter,hannah
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -22,7 +22,8 @@ TARGET_RECOVERY_DEVICE_MODULES := init_motorola_moto8937_o
 
 # Kernel
 TARGET_KERNEL_CONFIG += \
-    vendor/motorola/msm8937/hannah.config
+    vendor/motorola/msm8937/hannah.config \
+    vendor/motorola/msm8937/jeter.config
 
 # Partitions - dynamic
 BOARD_SUPER_PARTITION_BLOCK_DEVICES := oem system vendor

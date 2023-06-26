@@ -23,6 +23,16 @@ static const variant_info_t ahannah_info = {
     .dpi = 280,
 };
 
+static const variant_info_t aljeter_info = {
+    .brand = "motorola",
+    .device = "aljeter",
+    .marketname = "moto g(6) play",
+    .model = "moto g(6) play",
+    .build_fingerprint = "",
+
+    .dpi = 280,
+};
+
 static const variant_info_t hannah_info = {
     .brand = "motorola",
     .device = "hannah",
@@ -40,6 +50,8 @@ static void determine_variant()
     android::base::ReadFileToString("/sys/motorola-msm8937-mach/variant", &variant, true);
     if (variant == "ahannah")
         set_variant_props(ahannah_info);
+    else if (variant == "aljeter")
+        set_variant_props(aljeter_info);
     else if (variant == "hannah")
         set_variant_props(hannah_info);
 }
