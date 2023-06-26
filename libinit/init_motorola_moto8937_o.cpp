@@ -16,8 +16,8 @@
 static const variant_info_t ahannah_info = {
     .brand = "motorola",
     .device = "ahannah",
-    .marketname = "moto e⁵ plus",
-    .model = "XT1924",
+    .marketname = "moto e5 plus",
+    .model = "moto e5 plus",
     .build_fingerprint = "",
 
     .dpi = 280,
