@@ -1,4 +1,5 @@
 # ahannah Package version: 8.0.0/OCP27.91-38-31-54/65:user/release-keys
+# hannah Package version: 8.0.0/OCPS27.91-150-11-2/3:user/release-keys
 
 # Firmware - from ahannah
 vendor/firmware/FT8006U_Pramboot.bin
@@ -15,3 +16,6 @@ vendor/firmware/novatek_ts-tianma-NT36525-180312-25-hannah.bin
 
 # WLAN - from ahannah
 vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/ahannah_WCNSS_qcom_wlan_nv.bin|fb1275047485a605d6d9e4121ee54344ae93dd9d
+
+# WLAN - from hannah
+vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/hannah_WCNSS_qcom_wlan_nv.bin|b87fd6759ae47478cba81dd706ad4be0b7027417
