@@ -2,6 +2,7 @@
 # aljeter Package version: 9/PPP29.55-35-12/664d3:user/release-keys
 # hannah Package version: 8.0.0/OCPS27.91-150-11-2/3:user/release-keys
 # jeter Package version: 9/PCPS29.118-63-2/e943:user/release-keys
+# nora Package version: 8.0.0/OPPS27.91-176-11-7/7:user/release-keys
 
 # Firmware - from ahannah
 vendor/firmware/FT8006U_Pramboot.bin
@@ -27,3 +28,6 @@ vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/hannah_WCNSS_q
 
 # WLAN - from jeter (FIXME: jeter has multiple WCNSS_qcom_wlan_nv.bin)
 vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/jeter_WCNSS_qcom_wlan_nv.bin|3fc6a465ce4a3b24ddfd5f0b1afe82ca4620ac6a
+
+# WLAN - from nora
+vendor/etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/nora_WCNSS_qcom_wlan_nv.bin|8c82b8b183df1c4900d8e4312951c614ebc6f3d9

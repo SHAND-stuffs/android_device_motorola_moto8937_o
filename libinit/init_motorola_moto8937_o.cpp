@@ -53,6 +53,16 @@ static const variant_info_t jeter_info = {
     .dpi = 280,
 };
 
+static const variant_info_t nora_info = {
+    .brand = "motorola",
+    .device = "nora",
+    .marketname = "moto e5",
+    .model = "moto e5",
+    .build_fingerprint = "",
+
+    .dpi = 280,
+};
+
 static void determine_variant()
 {
     std::string variant;
@@ -66,6 +76,8 @@ static void determine_variant()
         set_variant_props(hannah_info);
     else if (variant == "jeter")
         set_variant_props(jeter_info);
+    else if (variant == "nora")
+        set_variant_props(nora_info);
 }
 
 static void set_model()
