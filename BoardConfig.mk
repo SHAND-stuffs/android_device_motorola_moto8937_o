@@ -26,6 +26,11 @@ TARGET_KERNEL_CONFIG += \
     vendor/motorola/msm8937/jeter.config \
     vendor/motorola/msm8937/nora.config
 
+TARGET_KERNEL_RECOVERY_CONFIG += \
+    vendor/motorola/msm8937/hannah.config \
+    vendor/motorola/msm8937/jeter.config \
+    vendor/motorola/msm8937/nora.config
+
 # Partitions - dynamic
 BOARD_SUPER_PARTITION_BLOCK_DEVICES := oem system vendor
 BOARD_SUPER_PARTITION_METADATA_DEVICE := system
