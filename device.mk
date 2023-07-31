@@ -17,9 +17,9 @@ $(call inherit-product, device/motorola/msm8937-common/msm8937.mk)
 TARGET_SCREEN_HEIGHT := 1440
 
 # Audio
-#PRODUCT_COPY_FILES += \
-#    $(call find-copy-subdir-files,*.xml,$(LOCAL_PATH)/audio/mixer_paths/,$(TARGET_COPY_OUT_ODM)/etc/) \
-#    $(call find-copy-subdir-files,*.xml,$(LOCAL_PATH)/audio/platform_info/,$(TARGET_COPY_OUT_ODM)/etc/)
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*.xml,$(LOCAL_PATH)/audio/mixer_paths/,$(TARGET_COPY_OUT_ODM)/etc/) \
+    $(call find-copy-subdir-files,*.xml,$(LOCAL_PATH)/audio/platform_info/,$(TARGET_COPY_OUT_ODM)/etc/)
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
