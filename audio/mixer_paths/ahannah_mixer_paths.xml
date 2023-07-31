@@ -1374,7 +1374,7 @@
 
     <path name="sidetone-handset">
         <path name="sidetone-iir" />
-        <ctl name="IIR1 INP1 Volume" value="53" />
+        <ctl name="IIR1 INP1 Volume" value="0" />
         <ctl name="RX1 MIX2 INP1" value="IIR1" />
     </path>
 
@@ -1382,7 +1382,7 @@
         <path name="sidetone-iir" />
         <ctl name="RX1 MIX2 INP1" value="IIR1" />
         <ctl name="RX2 MIX2 INP1" value="IIR1" />
-        <ctl name="IIR1 INP1 Volume" value="53" />
+        <ctl name="IIR1 INP1 Volume" value="0" />
     </path>
 
 
@@ -1403,7 +1403,10 @@
     </path>
 
     <path name="voice-headphones">
-        <path name="headphones" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RDAC2 MUX" value="RX1" />
+        <ctl name="HPHL" value="Switch" />
+        <ctl name="HPHR" value="Switch" />
     </path>
 
     <path name="voice-speaker-and-voice-headphones">
@@ -1418,6 +1421,8 @@
     <path name="speaker-and-headphones">
         <path name="speaker" />
         <path name="headphones" />
+        <ctl name="RX1 Digital Volume" value="76" />
+        <ctl name="RX2 Digital Volume" value="76" />
     </path>
 
     <path name="wsa-speaker-and-headphones">
@@ -1528,8 +1533,7 @@
     <!-- TTY devices -->
 
     <path name="tty-headphones">
-        <ctl name="RX1 MIX1 INP1" value="RX1" />
-        <ctl name="HPHL" value="Switch" />
+        <path name="voice-headphones" />
     </path>
 
     <path name="voice-tty-full-headphones">
@@ -1550,6 +1554,7 @@
     <path name="voice-tty-full-headset-mic">
         <path name="adc2" />
         <ctl name="ADC2 MUX" value="INP2" />
+        <ctl name="ADC2 Volume" value="0" />
     </path>
 
     <path name="voice-tty-hco-headset-mic">
@@ -1561,11 +1566,14 @@
     </path>
 
     <path name="unprocessed-handset-mic">
-        <path name="handset-mic" />
+        <path name="adc2" />
+        <ctl name="ADC2 MUX" value="INP2" />
+        <ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
 
     <path name="unprocessed-mic">
-        <path name="unprocessed-handset-mic" />
+        <path name="adc1" />
+        <ctl name="IIR1 INP1 MUX" value="DEC1" />
     </path>
 
     <path name="unprocessed-stereo-mic">
