@@ -10,6 +10,7 @@ set_acdb_path_props() {
 
 case "$(cat /sys/motorola-msm8937-mach/variant)" in
 	"ahannah")
+		# Audio ACDB
 		typeset -l carrier=$(getprop ro.carrier)
 
 		latam="timbr tefbr amxbr retbr"
@@ -24,6 +25,13 @@ case "$(cat /sys/motorola-msm8937-mach/variant)" in
 			# use default audio parameter
 			set_acdb_path_props ahannah
 		fi
+		# Audio fluence
+		setprop persist.audio.fluence.voicecall true
+		setprop persist.audio.fluence.voicecomm true
+		setprop persist.audio.fluence.voicerec true
+		setprop persist.audio.fluence.speaker false
+		setprop ro.qc.sdk.audio.fluencetype fluence
+		setprop vendor.audio.feature.fluence.enable true
 		;;
 	*)
 		set_acdb_path_props "$(cat /sys/motorola-msm8937-mach/variant)"
