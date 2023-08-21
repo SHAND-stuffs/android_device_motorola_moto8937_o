@@ -23,10 +23,12 @@ PRODUCT_COPY_FILES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
     android.hardware.gatekeeper@1.0-service.software
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor \
     android.hardware.keymaster@4.1-service
 
 # Rootdir
