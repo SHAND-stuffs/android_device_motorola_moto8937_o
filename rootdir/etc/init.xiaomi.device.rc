@@ -9,6 +9,10 @@ on property:ro.vendor.xiaomi.variant=*
     setprop vendor.audio.mixer_xml.path /odm/etc/${ro.vendor.xiaomi.variant}_mixer_paths.xml
     setprop vendor.audio.platform_info_xml.path /odm/etc/${ro.vendor.xiaomi.variant}_audio_platform_info_intcodec.xml
 
+# Kernel modules
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules nt36xxx-i2c
+
 # Sensors
 on property:ro.vendor.xiaomi.variant=*
     mount none /vendor/etc/sensors/${ro.vendor.xiaomi.variant}_sensor_def_qcomdev.conf /vendor/etc/sensors/${ro.vendor.xiaomi.variant}_def_qcomdev.conf bind
