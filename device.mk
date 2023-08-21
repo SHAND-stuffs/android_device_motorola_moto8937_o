@@ -44,9 +44,5 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-#ifeq ($(TARGET_KERNEL_VERSION),4.19)
-#$(call inherit-product, vendor/motorola/moto8937_o_4_19/moto8937_o_4_19-vendor.mk)
-#else
 $(call inherit-product, vendor/motorola/moto8937_o/moto8937_o-vendor.mk)
-#endif
 $(call inherit-product-if-exists, vendor/motorola/moto8937_o-2/moto8937_o-vendor.mk)
