@@ -1,0 +1,1 @@
+require board=nora|hannah|ahannah|rhannah|aljeter|jeter

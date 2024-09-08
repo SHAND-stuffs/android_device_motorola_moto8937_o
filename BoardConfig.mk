@@ -11,6 +11,7 @@ DEVICE_PATH := device/motorola/moto8937_o
 USES_DEVICE_MOTOROLA_MOTO8937_O := true
 
 # Asserts
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := moto8937_o,ahannah,aljeter,hannah,jeter,nora
 
 # HIDL
