@@ -14,6 +14,9 @@ USES_DEVICE_MOTOROLA_MOTO8937_O := true
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := moto8937_o,ahannah,aljeter,hannah,jeter,nora
 
+# Fastboot
+TARGET_BOARD_FASTBOOT_INFO_FILE := $(DEVICE_PATH)/fastboot-info.txt
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
